@@ -20,7 +20,6 @@ ActiveRecord::Schema.define(version: 20161208164447) do
     t.string   "encrypted_password",  default: "", null: false
     t.datetime "remember_created_at"
     t.index ["email"], name: "index_users_on_email", unique: true
-    t.index [nil], name: "index_users_on_reset_password_token", unique: true
   end
 
 end
